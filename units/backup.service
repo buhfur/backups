@@ -1,0 +1,14 @@
+[Unit]
+Description=Systemd Unit template for archiving users home directory  
+
+[Service]
+
+Type=simple 
+ExecStart=/bin/bash /usr/local/sbin/backup-home.sh
+
+
+[Install]
+
+WantedBy=multi-user.target
+
+

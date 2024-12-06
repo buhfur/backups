@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Timer unit which triggers script to be run to backup users home to network share 
+
+[Timer]
+OnCalendar=*-*-* 00:00:00
+Persistent=true
+Unit=backup.service
+
+[Install]
+
+WantedBy=timers.target
