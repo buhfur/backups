@@ -8,10 +8,10 @@ There are two units , one for the unit and the other for a timer unit. These uni
 
 # Backup scripts 
 
-* backup.sh -> script used by systemd units when the timer unit is triggered
+* backup-home.sh -> script used by systemd units when the timer unit is triggered
 * install.sh -> copies backup.sh to /usr/local/sbin and made executable  
 
 
-# Wants
+# Future TODO
 
-* some form of validation in the backup script to verify integrity of files maybe a list of sha256 hashes in a text file which is compared to 
+- [ ] add some form of validation in the backup script to verify integrity of files maybe a list of sha256 hashes in a text file which is compared to 
