@@ -1,0 +1,14 @@
+[Unit]
+Description=Systemd Unit template for copying backups to off-site cloud provider using rclone 
+
+[Service]
+
+Type=simple 
+ExecStart=/bin/bash /usr/local/sbin/remote-backup-home.sh
+
+
+[Install]
+
+WantedBy=multi-user.target
+
+
