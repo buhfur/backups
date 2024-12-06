@@ -19,7 +19,7 @@ if [ -f /var/log/backup.log ]; then # create log file if not present
     touch /var/log/backup.log
 fi
 # rsync -avzh --progress /home/* $BACKUP_DIR > /var/log/backup.log
-tar cvzf --exclude="/home/buhfur/.wine" $BACKUP_DIR/backup-$(date +"%Y-%m-%d_%H-%M-%S").tar.gz /home/
+tar cvzf --exclude="exclude.txt" $BACKUP_DIR/backup-$(date +"%Y-%m-%d_%H-%M-%S").tar.gz /home/
 
 if [ $? -eq 0 ]; then
     echo "INFO: Home diretory backed up successfully " 
